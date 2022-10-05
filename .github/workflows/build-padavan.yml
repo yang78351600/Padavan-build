@@ -1,4 +1,4 @@
-#修改TNAME: MI-R3P 中的MI-R3P为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
+#修改TNAME: MI-R3G 中的MI-R3G为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
 name: Build Padavan
 
 on: 
@@ -44,7 +44,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: MI-R3P
+        TNAME: MI-R3G
         KERNEL: 4.4
       run: |
         cd /opt/rt-n56u/trunk
